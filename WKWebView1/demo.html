@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no"/>
+            </head>
+    <body>
+        訊息：<span id="name"></span>
+        <br/>
+        <button onclick="responseSwift()">SendMsg</button>
+        <script type="text/javascript">
+            function sendMessage(message) {
+                document.getElementById("name").innerHTML = message
+                return "Got it"
+            }
+        
+        function responseSwift() {
+            window.webkit.messageHandlers.ToApp.postMessage("Send message to Swift")
+        }
+        </script>
+    </body>
+</html>

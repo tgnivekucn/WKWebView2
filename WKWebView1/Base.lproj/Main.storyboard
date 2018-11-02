@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cKb-hc-lzO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web View Controller-->
+        <scene sceneID="NCS-xA-Brz">
+            <objects>
+                <viewController id="cKb-hc-lzO" customClass="WebViewController" customModule="WKWebView1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LOy-tS-v7X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsd-R0-Zgd">
+                                <rect key="frame" x="58" y="39" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backAction:" destination="cKb-hc-lzO" eventType="touchUpInside" id="eKy-Jg-ZZ4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaD-Jq-dum">
+                                <rect key="frame" x="256" y="39" width="53" height="30"/>
+                                <state key="normal" title="forward"/>
+                                <connections>
+                                    <action selector="forwardAction:" destination="cKb-hc-lzO" eventType="touchUpInside" id="ANc-mY-tgT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcB-c5-zgd">
+                                <rect key="frame" x="138" y="39" width="99" height="30"/>
+                                <state key="normal" title="SendMsgToJS"/>
+                                <connections>
+                                    <action selector="sendMsgToJS:" destination="cKb-hc-lzO" eventType="touchUpInside" id="gvP-ma-g15"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KcB-c5-zgd" firstAttribute="centerY" secondItem="Xsd-R0-Zgd" secondAttribute="centerY" id="5uZ-Qa-seX"/>
+                            <constraint firstItem="KcB-c5-zgd" firstAttribute="centerX" secondItem="LOy-tS-v7X" secondAttribute="centerX" id="PKy-0f-Q7E"/>
+                            <constraint firstItem="Xsd-R0-Zgd" firstAttribute="leading" secondItem="UoV-5p-8uE" secondAttribute="leading" constant="58" id="QOJ-I6-Eb2"/>
+                            <constraint firstItem="UoV-5p-8uE" firstAttribute="trailing" secondItem="CaD-Jq-dum" secondAttribute="trailing" constant="66" id="WRq-FE-Xhg"/>
+                            <constraint firstItem="Xsd-R0-Zgd" firstAttribute="top" secondItem="UoV-5p-8uE" secondAttribute="top" constant="19" id="fbf-jU-E1C"/>
+                            <constraint firstItem="CaD-Jq-dum" firstAttribute="top" secondItem="UoV-5p-8uE" secondAttribute="top" constant="19" id="lxC-7B-pDU"/>
+                            <constraint firstItem="KcB-c5-zgd" firstAttribute="centerY" secondItem="LOy-tS-v7X" secondAttribute="centerY" id="sZJ-JO-Cwu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UoV-5p-8uE"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="sZJ-JO-Cwu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mBackBtn" destination="Xsd-R0-Zgd" id="F6o-pn-BDu"/>
+                        <outlet property="mForwardBtn" destination="CaD-Jq-dum" id="6av-zk-32b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K3x-9B-fgk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1033" y="100"/>
+        </scene>
+    </scenes>
+</document>

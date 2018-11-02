@@ -1,0 +1,11 @@
+WKWebView1/Assets.xcassets/.*
+Pods/Pods.xcodeproj/xcuserdata/*
+Pods/Pods.xcodeproj/xcuserdata/
+WKWebView1.xcodeproj/xcuserdata/
+WKWebView1.xcodeproj/project.xcworkspace/xcuserdata/*
+WKWebView1.xcodeproj/project.xcworkspace/xcshareddata/
+WKWebView1.xcworkspace/xcuserdata/*
+.DS_Store
+WKWebView1/.DS_Store
+WKWebView1/*/.DS_Store
+
